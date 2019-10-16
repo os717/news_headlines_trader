@@ -20,7 +20,7 @@ In this competition, you must predict a signed confidence value, (-1, 1), which 
 
 ## How I did it:
 
-Thw first step was to find a way to draw out the meaning from news headline segments. After learning of sentiment analysis, I found a Github repositary which uses "sense away neurel networks that use context embedding vectors". Yes, I have no idea what that means but hopefully I will soon :) Here is a link to it:
+The first step was to find a way to draw out the meaning from news headline segments. After learning of sentiment analysis, I found a Github repositary which uses "sense away neurel networks that use context embedding vectors". Yes, I have no idea what that means but hopefully I will soon :) Here is a link to it:
 
 `https://github.com/explosion/sense2vec`
 
