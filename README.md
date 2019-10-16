@@ -36,4 +36,4 @@ The next steps required modelling - and a lot of it! Coming from a Computer Engi
 
 I definately was not good enough to enter this competition when it opened last year. I had only just started university and this competition was open to all university students: undergraduates, masters and post-docs! It started off as a bit of fun on the side and then slowly I started to spend more time on it as the weeks progressed - so much so that I was giving up full weekends just to work on it. I am incredidibly proud of what I have achieved and definately hope to do more financial modelling in the future.
 
-Also I scored in top 30% :p
+### Also I scored in top 30% :p
