@@ -6,9 +6,9 @@ This is my submission for a Kaggle competition I entered a while back sponsered 
 
 To do this, compeititors were given two training data sets dating from 2007 to 2018:
 
-`Market Data (2007 to 2018) - Provided by Intrinio, containing financial market information such as opening price, closing price, trading volume, calculated returns, etc.`
+`Market Data (2007 to 2016) - Provided by Intrinio, containing financial market information such as opening price, closing price, trading volume, calculated returns, etc.`
 
-`News Data (2007 to Present) - Provided by Reuters, containing information about news articles/alerts published about assets, such as article details, sentiment, and other commentary.`
+`News Data (2007 to 2016) - Provided by Reuters, containing information about news articles/alerts published about assets, such as article details, sentiment, and other commentary.`
 
 The market data contains a variety of returns calculated over different timespans. All of the return features in this set of market data have these properties:
 
@@ -24,5 +24,10 @@ The first step was to find a way to draw out the meaning from news headline segm
 
 `https://github.com/explosion/sense2vec`
 
+The next steps required modelling - and a lot of it! Coming from a Computer Engineering-y background meant that, at the time the competition started, I had no real idea what the best models to use were for every situation. But, after a lot of asking, I eventually created a modelling strategey.
 
+1)  I first applied a baseline ROC for LightGBM (defaultish settings) on the entire holdout set which was good enough to bring my up to the 9th decile. But I needed to find a way to rise further up the ranks by loking for more nuanced trends
 
+2) I then looked to model single companies since clustering yielded no clear groups which had similar enough charachteristics. I applyed a gradient-boosting forrest over Apple stocks and compared that to the ROC and noticed that according to my model the companies most recent reurns were the largest factor effecting its next 10 day return. I tried a logistic regression which showed that the most recent news about Apple most effect my model. Doing this, helped me to bring my model up the live rankings but in order to further propel myself up the leaderboards, I looked to use Long-Short Memory Networks.
+
+3)
